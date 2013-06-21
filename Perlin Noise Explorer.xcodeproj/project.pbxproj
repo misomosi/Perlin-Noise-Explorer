@@ -14,7 +14,6 @@
 		27CE6AF917742BFC00CAC110 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27CE6AF817742BFC00CAC110 /* cute_image.jpg */; };
 		27CE6AFE17742BFC00CAC110 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27CE6AFC17742BFC00CAC110 /* InfoPlist.strings */; };
 		27CE6BEA17742C4800CAC110 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27CE6B0517742C4800CAC110 /* CMakeLists.txt */; };
-		27CE6BEB17742C4800CAC110 /* dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27CE6B0C17742C4800CAC110 /* dummy.cpp */; };
 		27CE6BEC17742C4800CAC110 /* func_common.inl in Resources */ = {isa = PBXBuildFile; fileRef = 27CE6B0E17742C4800CAC110 /* func_common.inl */; };
 		27CE6BED17742C4800CAC110 /* func_exponential.inl in Resources */ = {isa = PBXBuildFile; fileRef = 27CE6B1017742C4800CAC110 /* func_exponential.inl */; };
 		27CE6BEE17742C4800CAC110 /* func_geometric.inl in Resources */ = {isa = PBXBuildFile; fileRef = 27CE6B1217742C4800CAC110 /* func_geometric.inl */; };
@@ -116,6 +115,8 @@
 		27CE6C4E17742C4800CAC110 /* vector_query.inl in Resources */ = {isa = PBXBuildFile; fileRef = 27CE6BE317742C4800CAC110 /* vector_query.inl */; };
 		27CE6C4F17742C4800CAC110 /* verbose_operator.inl in Resources */ = {isa = PBXBuildFile; fileRef = 27CE6BE517742C4800CAC110 /* verbose_operator.inl */; };
 		27CE6C5017742C4800CAC110 /* wrap.inl in Resources */ = {isa = PBXBuildFile; fileRef = 27CE6BE717742C4800CAC110 /* wrap.inl */; };
+		27CE6C5317742FAC00CAC110 /* SimplexVector2DField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27CE6C5117742FAC00CAC110 /* SimplexVector2DField.cpp */; };
+		27CE6C561774345F00CAC110 /* Simplex2DEval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27CE6C541774345F00CAC110 /* Simplex2DEval.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,7 +135,6 @@
 		27CE6B0917742C4800CAC110 /* _swizzle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _swizzle.hpp; sourceTree = "<group>"; };
 		27CE6B0A17742C4800CAC110 /* _swizzle_func.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _swizzle_func.hpp; sourceTree = "<group>"; };
 		27CE6B0B17742C4800CAC110 /* _vectorize.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _vectorize.hpp; sourceTree = "<group>"; };
-		27CE6B0C17742C4800CAC110 /* dummy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dummy.cpp; sourceTree = "<group>"; };
 		27CE6B0D17742C4800CAC110 /* func_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = func_common.hpp; sourceTree = "<group>"; };
 		27CE6B0E17742C4800CAC110 /* func_common.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_common.inl; sourceTree = "<group>"; };
 		27CE6B0F17742C4800CAC110 /* func_exponential.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = func_exponential.hpp; sourceTree = "<group>"; };
@@ -353,6 +353,10 @@
 		27CE6BE617742C4800CAC110 /* wrap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = wrap.hpp; sourceTree = "<group>"; };
 		27CE6BE717742C4800CAC110 /* wrap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wrap.inl; sourceTree = "<group>"; };
 		27CE6BE917742C4800CAC110 /* xstream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xstream.hpp; sourceTree = "<group>"; };
+		27CE6C5117742FAC00CAC110 /* SimplexVector2DField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimplexVector2DField.cpp; sourceTree = "<group>"; };
+		27CE6C5217742FAC00CAC110 /* SimplexVector2DField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplexVector2DField.h; sourceTree = "<group>"; };
+		27CE6C541774345F00CAC110 /* Simplex2DEval.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Simplex2DEval.cpp; sourceTree = "<group>"; };
+		27CE6C551774345F00CAC110 /* Simplex2DEval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Simplex2DEval.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +405,10 @@
 				27CE6AF417742BFC00CAC110 /* ResourcePath.hpp */,
 				27CE6AF517742BFC00CAC110 /* Resources */,
 				27CE6AFA17742BFC00CAC110 /* Supporting Files */,
+				27CE6C5117742FAC00CAC110 /* SimplexVector2DField.cpp */,
+				27CE6C5217742FAC00CAC110 /* SimplexVector2DField.h */,
+				27CE6C541774345F00CAC110 /* Simplex2DEval.cpp */,
+				27CE6C551774345F00CAC110 /* Simplex2DEval.h */,
 			);
 			path = "Perlin Noise Explorer";
 			sourceTree = "<group>";
@@ -446,7 +454,6 @@
 				27CE6B0917742C4800CAC110 /* _swizzle.hpp */,
 				27CE6B0A17742C4800CAC110 /* _swizzle_func.hpp */,
 				27CE6B0B17742C4800CAC110 /* _vectorize.hpp */,
-				27CE6B0C17742C4800CAC110 /* dummy.cpp */,
 				27CE6B0D17742C4800CAC110 /* func_common.hpp */,
 				27CE6B0E17742C4800CAC110 /* func_common.inl */,
 				27CE6B0F17742C4800CAC110 /* func_exponential.hpp */,
@@ -873,7 +880,8 @@
 			files = (
 				27CE6AF117742BFC00CAC110 /* main.cpp in Sources */,
 				27CE6AF317742BFC00CAC110 /* ResourcePath.mm in Sources */,
-				27CE6BEB17742C4800CAC110 /* dummy.cpp in Sources */,
+				27CE6C5317742FAC00CAC110 /* SimplexVector2DField.cpp in Sources */,
+				27CE6C561774345F00CAC110 /* Simplex2DEval.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -998,10 +1006,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = /usr/local/include/;
 				INFOPLIST_FILE = "Perlin Noise Explorer/Perlin Noise Explorer-Info.plist";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1011,9 +1022,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = /usr/local/include/;
 				INFOPLIST_FILE = "Perlin Noise Explorer/Perlin Noise Explorer-Info.plist";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
